@@ -3,14 +3,9 @@ source 'http://rubygems.org'
 gem 'slack-ruby-bot'
 gem 'puma'
 gem 'sinatra'
-gem 'dotenv'
+gem 'yt',  '~> 0.25.22'     # YouTube API client
 
 group :development, :test do
-  gem 'rake'
+  gem 'pry-nav'
   gem 'foreman'
-end
-
-group :test do
-  gem 'rspec'
-  gem 'rack-test'
 end
