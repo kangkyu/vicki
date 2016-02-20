@@ -9,6 +9,7 @@ module Vicki
 
       command 'audit' do |client, data, _match|
         audit = Yt::Audit.new channel_id: _match[:expression]
+        client.say channel: data.channel, text: "Channel: https://www.youtube.com/channel/#{_match[:expression]}"
         audit.run.each do |audit_item|
           text = "#{audit_item.valid_count} (out of #{audit_item.total_count}) #{audit_item.title}"
           client.say channel: data.channel, text: text
