@@ -76,9 +76,9 @@ GEM
     websocket-extensions (0.1.2)
     yt (0.25.22)
       activesupport
-    yt-annotations (1.2.1)
+    yt-annotations (1.3.2)
       activesupport (>= 4, < 6)
-    yt-audit (0.2.1)
+    yt-audit (0.3.1)
       yt (~> 0.25.22)
       yt-annotations (~> 1.2)
 
@@ -92,7 +92,7 @@ DEPENDENCIES
   sinatra
   slack-ruby-bot
   yt (~> 0.25.22)
-  yt-audit (~> 0.2.1)
+  yt-audit (~> 0.3.1)
 
 BUNDLED WITH
-   1.11.2
+   1.13.2
