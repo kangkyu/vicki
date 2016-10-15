@@ -13,7 +13,7 @@ module Vicki
         when Net::HTTPSuccess, Net::HTTPRedirection
           client.say channel: data.channel, text: "I'm crunching the numbers now, you will get an email soon."
         else
-          client.say channel: data.channel, text: "Ooops"
+          client.say channel: data.channel, text: res.body
         end
       end
     end
